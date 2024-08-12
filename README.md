@@ -25,3 +25,11 @@ for i in range(n):    # 2 operaciones básicas, pero se repite N veces
     counter += 1      # por lo tanto serán en total 2N operaciones
 
 # f(n) = 2n + 2
+
+# Notación Big O:
+# Time Complexity: O(n) 
+# - El bucle se ejecuta 'n' veces y cada iteración realiza un número constante de operaciones, por lo que la complejidad temporal es O(n).
+
+# Space Complexity: O(1) 
+# - El algoritmo utiliza una cantidad constante de memoria (solo para las variables 'n' y 'counter'), independientemente del tamaño de la entrada 'n', por lo que la complejidad espacial es O(1).
+
