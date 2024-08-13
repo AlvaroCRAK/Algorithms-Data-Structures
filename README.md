@@ -23,6 +23,7 @@ counter = 0     # 1 operación básica
 
 for i in range(n):    # 2 operaciones básicas, pero se repite N veces
     counter += 1      # por lo tanto serán en total 2N operaciones
+    counter += 1
 
 # f(n) = 2n + 2
 
