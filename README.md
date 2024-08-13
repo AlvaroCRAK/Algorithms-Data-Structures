@@ -33,6 +33,7 @@ for i in range(n):    # 2 operaciones básicas, pero se repite N veces
 
 # Space Complexity: O(1) 
 # - El algoritmo utiliza una cantidad constante de memoria (solo para las variables 'n' y 'counter'), independientemente del tamaño de la entrada 'n', por lo que la complejidad espacial es O(1).
+```
 
 ```python
 n = 1000                # 1 operacion basica
@@ -47,4 +48,5 @@ for i in range(n):      # Se repetira n veces
     # Notacion Big O:
     # Time Complexity: O(n)
     # Space Complexity: o(1)
+```
 
