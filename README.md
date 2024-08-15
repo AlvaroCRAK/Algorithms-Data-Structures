@@ -46,7 +46,7 @@ for i in range(n):      # Se repetira n veces
     # f(n) = n^2 + 2
 
     # Notacion Big O:
-    # Time Complexity: O(n)
+    # Time Complexity: O(n^2)
     # Space Complexity: o(1)
 ```
 
