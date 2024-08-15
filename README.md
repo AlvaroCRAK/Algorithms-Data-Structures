@@ -49,4 +49,26 @@ for i in range(n):      # Se repetira n veces
     # Time Complexity: O(n^2)
     # Space Complexity: o(1)
 ```
+```python
+n = 50000
+numbers = [i+1 for i in range(n)]
+
+counter = 0
+
+for i in range(n):
+    x = 2
+    x = 1
+    if x == 1:
+        counter += 1
+    if x in numbers:
+        counter += 1
+
+print(counter)
+
+# f(n) = n^2 + 5n + 2
+# Time complexity: O(n^2)
+
+# f(n) = n + 2
+# Space complexity: o(n)
+```
 
