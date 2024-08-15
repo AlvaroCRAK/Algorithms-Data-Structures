@@ -13,7 +13,7 @@ Es el tiempo que un programa tarda en ejecutarse desde que comienza hasta que te
 Es el tiempo que tarda en convertir el código fuente en un código ejecutable por la máquina.
 
 ## Notación Big O
-La notación Big O es una herramienta comúnmente utilizada para determinar el rendimiento o eficiencia de un algoritmo, especialmente en términos de tiempo de ejecución en función del tamaño de la entrada. Expresa el comportamiento asintótico (el peor de los casos) del algoritmo cuando el tamaño de la entrada tiende a infinito.
+La notación Big O es una herramienta comúnmente utilizada para determinar el rendimiento o eficiencia de un algoritmo, especialmente en términos de tiempo de ejecución en función del tamaño de la entrada. Expresa el comportamiento asintótico (el peor de los casos) del algoritmo cuando el tamaño de la entrada tiende a infinito (una computadora tradicional puede realizar 10^8 operaciones).
 
 ### Ejemplo de Código:
 
