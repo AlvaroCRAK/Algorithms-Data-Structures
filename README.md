@@ -47,7 +47,7 @@ for i in range(n):      # Se repetira n veces
 
     # Notacion Big O:
     # Time Complexity: O(n^2)
-    # Space Complexity: o(1)
+    # Space Complexity: O(1)
 ```
 ```python
 n = 50000
@@ -69,6 +69,6 @@ print(counter)
 # Time complexity: O(n^2)
 
 # f(n) = n + 2
-# Space complexity: o(n)
+# Space complexity: O(n)
 ```
 
