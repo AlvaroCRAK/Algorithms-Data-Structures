@@ -72,21 +72,74 @@ print(counter)
 # Space complexity: O(n)
 ```
 # Arrays
-Conjunto de elementos(datos).
+Conjunto de elementos (datos).
 
-## Arrays estaticos
-Los arrays estaticos tienen un tmanho fijo definido en tiempo de compilacion.
+## Arrays estáticos
+Los arrays estáticos tienen un tamaño fijo definido en tiempo de compilación.
+
 ```cpp
 #include <iostream>
 using namespace std;
 int main(){
-  int a[10]; // O(1) => Declaracion
-  int b[10]; = {0}; // O(n) Inicializacion
+  int a[10]; // O(1) => Declaración
+  int b[10] = {0}; // O(n) Inicialización
 
-  cout << b[0] << "\n"; // Indexacion: O(1)
+  cout << b[0] << "\n"; // Indexación: O(1)
   cout << b[5] << "\n";
-
 }
-// La memoria para los arrays estaticos se asignan en la pila(Stack).
 ```
-                                                                          
+La memoria para los arrays estaticos se asignan en la pila(Stack).
+
+## Arrays dinamicos
+El tamaño de los arrays dinámicos se puede definir en tiempo de ejecución.
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+int main(){
+  vector<int> a(10, 0); // O(n) Inicialización
+
+  a.push_back(1); // O(1) Insertar elemento al final del vector
+  a.push_back(2);
+  a.push_back(3);
+
+  cout << a[0] << "\n"; // O(1) Indexación
+  cout << a.size() << "\n";  // O(1) Obtener tamaño del array
+  a[0] = -1; // O(1)
+
+  a.pop_back(); // O(1) Eliminar elemento del final
+
+  a.insert(a.begin() + 2, 5); // O(n) Insertar elemento en una posición
+  a.erase(a.begin() + 2); // O(n) Eliminar elemento en una posición
+
+  cout << *a.begin(); // O(1)
+}
+```
+```python
+number_list = [0 for i in range(10)] # O(n)
+
+number_list.append(1) # O(1)
+number_list.append(2)
+number_list.append(3)
+
+print(number_list[0]) # O(1)
+print(len(number_list)) # O(1)
+
+number_list.pop() # O(1)
+
+number_list.insert(2, 5) # O(n)
+number_list.pop(2) # O(n)
+
+# Mutabilidad de listas
+lista_1 = [1, 2, 3, 4, 5]
+lista_2 = lista_1 # .copy() evita que el objeto tenga, por así decirlo, dos nombres. .copy() es O(n)
+
+lista_2[0] = -1
+print(lista_1) # Imprimen lo mismo porque hacen referencia a la misma lista única
+print(lista_2)
+```
+La memoria para los arrays dinámicos se asigna en el heap.
+
+Los arrays estáticos son más rápidos en acceso debido a que están en la pila y tienen menos sobrecarga de memoria. Sin embargo, esta diferencia suele ser insignificante o pequeña en la gran mayoría de los casos.
+
+
