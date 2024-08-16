@@ -136,7 +136,7 @@ lista_2 = lista_1 # .copy() evita que el objeto tenga, por así decirlo, dos nom
 
 lista_2[0] = -1
 print(lista_1) # Imprimen lo mismo porque hacen referencia a la misma lista única
-print(lista_2)
+print(lista_2) # print(id(lista_1))
 ```
 La memoria para los arrays dinámicos se asigna en el heap.
 
