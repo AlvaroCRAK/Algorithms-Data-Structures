@@ -71,4 +71,22 @@ print(counter)
 # f(n) = n + 2
 # Space complexity: O(n)
 ```
+# Arrays
+Conjunto de elementos(datos).
 
+## Arrays estaticos
+Los arrays estaticos tienen un tmanho fijo definido en tiempo de compilacion.
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+  int a[10]; // O(1) => Declaracion
+  int b[10]; = {0}; // O(n) Inicializacion
+
+  cout << b[0] << "\n"; // Indexacion: O(1)
+  cout << b[5] << "\n";
+
+}
+// La memoria para los arrays estaticos se asignan en la pila(Stack).
+```
+                                                                          
