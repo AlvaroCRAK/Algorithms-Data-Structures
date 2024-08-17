@@ -95,6 +95,7 @@ El tamaño de los arrays dinámicos se puede definir en tiempo de ejecución.
 ```cpp
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 int main(){
   vector<int> a(10, 0); // O(n) Inicialización
@@ -111,6 +112,8 @@ int main(){
 
   a.insert(a.begin() + 2, 5); // O(n) Insertar elemento en una posición
   a.erase(a.begin() + 2); // O(n) Eliminar elemento en una posición
+
+  sort(a.begin(), a.end()); // MergeSort: O(nlogn)
 
   cout << *a.begin(); // O(1)
 }
@@ -129,6 +132,8 @@ number_list.pop() # O(1)
 
 number_list.insert(2, 5) # O(n)
 number_list.pop(2) # O(n)
+
+number_list = sorted(number_list)
 
 # Mutabilidad de listas
 lista_1 = [1, 2, 3, 4, 5]
