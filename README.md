@@ -147,4 +147,60 @@ La memoria para los arrays dinámicos se asigna en el heap.
 
 Los arrays estáticos son más rápidos en acceso debido a que están en la pila y tienen menos sobrecarga de memoria. Sin embargo, esta diferencia suele ser insignificante o pequeña en la gran mayoría de los casos.
 
+# Strings
+Los strings (cadenas) podemos entenderlas como un vector pero de caracteres. En C++ contamos con std::string, mientras que en Python con str,
+
+Algo muy importante a tener en cuenta es que las cadenas en Python son inmutables. Es decir, no podemos modificar los elementos de esa cadena. Para esto, cada vez que queramos modificar sus elementos, o bien creamos una nueva cadena, o metemos los caracteres de la cadena en una lista para su facil modificacion.
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+  string s = "cadena"; // O(n) asignacion
+
+  cout << s[0] << "\n"; // O(1) Indexacion
+  s[0] = 'k'; // O(1)
+  cout << s.size() << "\n"; // O(1) el tamanho de la cadena
+  s.pop_back();  // O(1) eliminacion del ultimo caracter
+  
+  string s1 = "cadena1", s2 = "cadena2";
+  string t = s1 + s2; // O(|s2|)) la complejidad de la concatenacion dependera del tamanho de la derecha
+
+  cout << t << "\n";
+}
+```
+```python
+s = "cadena"
+print(s)
+```
+# Hash table
+La tabla hash (hash table) es una estructura de datos que relaciona parejas de datos: una llave y un valor (las llaves son unicas). Para poder acceder al valor necesitaremos consultar a la estructura usando la llave. Muchos lenguajes de programacion contienen esta estructura ya implementada.
+1. Python => <class 'dict'>
+2. C++ => std::unordered_map
+3. Java => HashMap o Hashtable
+```python
+# Creamos una tabla hash vacia
+hash_table = {}
+print(type(hash_table))
+
+# Agregamos llaves con sus respectivos valores
+hash_table['key1'] = 'value1'
+hash_table['key2'] = 'value2'
+hash_table['key3'] = 'value3'
+hash_table['key4'] = 'value4'
+
+# Accedemos a los valores por sus llaves
+print(hash_table['key2'])
+print(hash_table['key4'])
+
+# Eliminamos una llave de la tabla hash
+value = hash_table.pop('key3')
+print('key3' in hash_table)
+print(value)
+```
+Las tablas hash tienen por lo general estas tres operaciones que vimos:
+1. Agregar una llave
+2. Acceder al valor de una llave
+3. Eliminar una llave
+Estas operaciones tienen un tiempo promedio de ejecucion de O(1).
+
 
