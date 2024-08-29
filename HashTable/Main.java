@@ -10,7 +10,8 @@ public class Main{
     System.out.println(hashTable.get("Enrique"));
     System.out.println(hashTable.get("Cencia"));
 
-    hashTable.remove("Alvaro");
+    System.out.println(hashTable.remove("Alvaro");
+  
     System.out.println(hashTable.get("Alvaro"));
 
     System.out.println(hashTable.size());
