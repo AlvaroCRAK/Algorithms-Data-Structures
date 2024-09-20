@@ -65,10 +65,8 @@ for i in range(n):
 
 print(counter)
 
-# f(n) = n^2 + 5n + 2
 # Time complexity: O(n^2)
 
-# f(n) = n + 2
 # Space complexity: O(n)
 ```
 # Arrays
